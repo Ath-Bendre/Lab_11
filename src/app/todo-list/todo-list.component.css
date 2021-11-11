@@ -1,0 +1,33 @@
+.ul{
+  background: rgb(40, 42, 53);
+  color: white;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 360px;
+  border: 2px solid black;
+  list-style-type: none;
+}
+
+.ul .li{
+  background:rgb(231, 233, 235);
+  border: 2px solid black;
+  margin-left: 20px;
+  margin: 10px;
+}
+
+p{
+  margin-left: 20px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.li :hover{
+  background-color: rgb(4, 170, 109);
+  color: white;
+}
+
+.li{
+
+  color: black;
+}

@@ -1,0 +1,14 @@
+<br><p><strong>TODO LIST</strong></p>
+<div class="ul">
+  <mat-selection-list #tasks>
+    <div class="li">
+      <mat-list-option *ngFor="let item of temp">
+        {{item.ToDo}}
+      </mat-list-option>
+    </div>
+
+  </mat-selection-list>
+  <p>
+    Task completed: {{tasks.selectedOptions.selected.length}}
+  </p>
+</div>

@@ -1,0 +1,37 @@
+<mat-toolbar color="custom">
+  <mat-toolbar-row>
+      <span></span>
+      <button mat-icon-button [matMenuTriggerFor]="menu" mat-icon-button class="icon" aria-label="Icon-button menu ">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="center">Lab 11</span>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+        <button mat-menu-item routerLink="list">
+          <mat-icon>checklist</mat-icon>
+          <span>Todo List</span>
+        </button>
+        <button mat-menu-item routerLink="table">
+          <mat-icon >table_chart</mat-icon>
+          <span>Todo Table</span>
+        </button>
+        <button mat-menu-item routerLink="spacex">
+          <mat-icon>rocket_launch</mat-icon>
+          <span>SpaceX</span>
+        </button>
+      </mat-menu>
+        <span></span>
+        <span class="spacer"></span>
+        <button mat-icon-button class="icon" aria-label="Icon-button heart">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="icon" aria-label="Icon-button share">
+            <mat-icon>share</mat-icon>
+        </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
+
